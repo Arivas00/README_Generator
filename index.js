@@ -54,10 +54,11 @@ const promptUser = () =>
             },
         ])
 
+        
 
 const genReadme = (answers) =>
-    `# ${answers.title}
-![GitHub Licence]${answers.license}
+`# ${answers.title}
+![GitHub Licence](https://img.shields.io/badge/License-${answers.license}-yellow.svg)
 
 ## Description
 
@@ -109,6 +110,9 @@ ${answers.testing}
 
 If you have any questions about the repo, open an issue or contact me directly at <${answers.email}>. You can find more of my work at [${answers.username}](https://github.com/${answers.username})
 `;
+
+
+    
 
 
 const init = () => {

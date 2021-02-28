@@ -1,9 +1,10 @@
 # README Generator
-![GitHub Licence]MIT
+![GitHub Licence](https://img.shields.io/badge/License-MIT-yellow.svg)
 
 ## Description
 
-An automatic README Generator using node and user inputs.
+An automatic README generator using node and user inputs.
+[Video Example](https://drive.google.com/file/d/1XA7j5fL1o7FX6HhTHwSZHU8MYaTzoyoC/view)
 
 ## Table of Contents
 
@@ -37,7 +38,7 @@ This project is licensed under the MIT license.
 
 ## Contributing
 
-Need to know how to use Git and Github.
+Need to know how to use Git and GitHub.
 
 ## Tests
 
