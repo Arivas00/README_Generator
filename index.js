@@ -55,8 +55,23 @@ const promptUser = () =>
         ])
 
 const genReadme = (answers) =>
-`
-# ${title}
+`# ${answers.title}
+!
+
+## Description
+
+${answers.description}
+
+*[Installation](#installation)
+
+## Installation
+
+To install necessary dependencies, run the following command:
+
+\`\`\`
+
+${answers.installation}
+\`\`\`
 
 `;
 
