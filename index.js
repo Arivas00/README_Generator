@@ -39,7 +39,7 @@ const promptUser = () =>
             {
                 type: "input",
                 message: "What command should be run to run tests?",
-                name: "usage",
+                name: "testing",
                 default: "npm test",
             },
             {
@@ -56,7 +56,7 @@ const promptUser = () =>
 
 const genReadme = (answers) =>
 `# ${answers.title}
-!
+![GitHub Licence](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
 
 ## Description
 
@@ -87,15 +87,28 @@ ${answers.installation}
 
 ## Usage
 
-${use}
+${answers.use}
 
 ## License
 
-This project is licensed under the ${license} license.
+This project is licensed under the ${answers.license} license.
 
 ## Contributing
 
-${contribute}
+${answers.contribute}
+
+## Tests
+
+To run tests, run the following command:
+
+\`\`\`
+
+${answers.testing}
+\`\`\`
+
+## Questions
+
+If you have any questions about the repo, open an issue or contact me directly at <${answers.email}>. You can find more of my work at [${answers.username}](https://github.com/Arivas00)
 `;
 
 
