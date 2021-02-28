@@ -62,7 +62,19 @@ const genReadme = (answers) =>
 
 ${answers.description}
 
+## Table of Contents
+
 *[Installation](#installation)
+
+*[Usage](#usage)
+
+*[License](#license)
+
+*[Contributing](#contributing)
+
+*[Tests](#tests)
+
+*[Questions](#questions)
 
 ## Installation
 
@@ -73,6 +85,17 @@ To install necessary dependencies, run the following command:
 ${answers.installation}
 \`\`\`
 
+## Usage
+
+${use}
+
+## License
+
+This project is licensed under the ${license} license.
+
+## Contributing
+
+${contribute}
 `;
 
 
