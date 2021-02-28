@@ -1,9 +1,9 @@
 # README Generator
-![GitHub Licence](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![GitHub Licence]MIT
 
 ## Description
 
-A automatic README generator using node and user inputs.
+An automatic README Generator using node and user inputs.
 
 ## Table of Contents
 
@@ -24,7 +24,6 @@ A automatic README generator using node and user inputs.
 To install necessary dependencies, run the following command:
 
 ```
-
 npm i
 ```
 
@@ -34,18 +33,17 @@ Have node installed and all node dependencies.
 
 ## License
 
-This project is licensed under the APACHE 2.0 license.
+This project is licensed under the MIT license.
 
 ## Contributing
 
-Need to know Git.
+Need to know how to use Git and Github.
 
 ## Tests
 
 To run tests, run the following command:
 
 ```
-
 npm test
 ```
 

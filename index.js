@@ -54,29 +54,10 @@ const promptUser = () =>
             },
         ])
 
-if(answers.license === "APACHE 2.0") {
-    var badgeLicense = "(https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
-}
-
-if(answers.license === "MIT") {
-    var badgeLicense = "(https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
-}
-
-if(answers.license === "GPL 3.0") {
-    var badgeLicense = "(https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
-}
-
-if(answers.license === "BSD 3") {
-    var badgeLicense = "(https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
-}
-
-if(answers.license === "None") {
-    var badgeLicense = "None"
-}
 
 const genReadme = (answers) =>
-`# ${answers.title}
-![GitHub Licence]${badgeLicense}
+    `# ${answers.title}
+![GitHub Licence]${answers.license}
 
 ## Description
 
@@ -130,16 +111,16 @@ If you have any questions about the repo, open an issue or contact me directly a
 `;
 
 
-        const init = () => {
-            promptUser().then((answers) => {
-              try {
-                const readme = genReadme(answers);
-                fs.writeFileSync("README.md", readme);
-                console.log('Generating README...');
-              } catch (error) {
-                console.log(error);
-              }
-            });
-          };
-          
-          init();
+const init = () => {
+    promptUser().then((answers) => {
+        try {
+            const readme = genReadme(answers);
+            fs.writeFileSync("README.md", readme);
+            console.log('Generating README...');
+        } catch (error) {
+            console.log(error);
+        }
+    });
+};
+
+init();
