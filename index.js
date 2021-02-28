@@ -54,9 +54,29 @@ const promptUser = () =>
             },
         ])
 
+if(answers.license === "APACHE 2.0") {
+    var badgeLicense = "(https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)"
+}
+
+if(answers.license === "MIT") {
+    var badgeLicense = "(https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)"
+}
+
+if(answers.license === "GPL 3.0") {
+    var badgeLicense = "(https://img.shields.io/badge/License-GPL%203.0-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)"
+}
+
+if(answers.license === "BSD 3") {
+    var badgeLicense = "(https://img.shields.io/badge/License-BSD%203--Clause-blue.svg)](https://opensource.org/licenses/BSD-3-Clause)"
+}
+
+if(answers.license === "None") {
+    var badgeLicense = "None"
+}
+
 const genReadme = (answers) =>
 `# ${answers.title}
-![GitHub Licence](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)
+![GitHub Licence]${badgeLicense}
 
 ## Description
 
@@ -81,7 +101,6 @@ ${answers.description}
 To install necessary dependencies, run the following command:
 
 \`\`\`
-
 ${answers.installation}
 \`\`\`
 
@@ -102,13 +121,12 @@ ${answers.contribute}
 To run tests, run the following command:
 
 \`\`\`
-
 ${answers.testing}
 \`\`\`
 
 ## Questions
 
-If you have any questions about the repo, open an issue or contact me directly at <${answers.email}>. You can find more of my work at [${answers.username}](https://github.com/Arivas00)
+If you have any questions about the repo, open an issue or contact me directly at <${answers.email}>. You can find more of my work at [${answers.username}](https://github.com/${answers.username})
 `;
 
 
